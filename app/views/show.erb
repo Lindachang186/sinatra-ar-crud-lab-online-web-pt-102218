@@ -1,2 +1,5 @@
 <h1> <%= @article.title %> </h1>
 <h1> <%= @article.content %> </h1>
+<form action="/articles/<%=@model.id%>/delete" method="post">
+  <input type="submit" value="delete">
+</form>
